@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Web Programming</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MyWebsite</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="web-programming.html" class="active">Web Programming</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="web-programming">
+        <div class="container">
+            <h1>Web Programming Materials</h1>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>HTML Basics</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>HTML Document Structure</h3>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        
+                        <h3>Common HTML Elements</h3>
+                        <ul>
+                            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Headings</li>
+                            <li><code>&lt;p&gt;</code> - Paragraph</li>
+                            <li><code>&lt;a&gt;</code> - Anchor (link)</li>
+                            <li><code>&lt;img&gt;</code> - Image</li>
+                            <li><code>&lt;div&gt;</code> - Division/container</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>CSS Fundamentals</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>CSS Syntax</h3>
+                        <pre><code>selector {
+    property: value;
+}</code></pre>
+                        
+                        <h3>CSS Box Model</h3>
+                        <div class="box-model-visual">
+                            <div class="margin">Margin
+                                <div class="border">Border
+                                    <div class="padding">Padding
+                                        <div class="content">Content</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Flexbox Example</h3>
+                        <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>JavaScript Basics</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Variables and Data Types</h3>
+                        <pre><code>// Variables
+let name = "DANIEL";
+const age = 21;
+var isStudent = true;
+
+// Data Types
+let string = "Hello";
+let number = 42;
+let boolean = true;
+let array = [1, 2, 3];
+let object = { key: "value" };</code></pre>
+                        
+                        <h3>Functions</h3>
+                        <pre><code>function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Arrow function
+const greet = name => `Hello, ${name}!`;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>PHP Introduction</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Basic PHP Syntax</h3>
+                        <pre><code>&lt;?php
+    // PHP code goes here
+    echo "HAII TEMANNN";
+?&gt;</code></pre>
+                        
+                        <h3>Variables in PHP</h3>
+                        <pre><code>&lt;?php
+    $name = "DANIEL";
+    $age = 21;
+    echo "My name is $name and I am $age years old.";
+?&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>Control Flow</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Conditional Statements</h3>
+                        <pre><code>// If-else
+if (age >= 18) {
+    echo "Adult";
+} else {
+    echo "Minor";
+}
+
+// Switch
+switch(day) {
+    case "Monday":
+        echo "Start of week";
+        break;
+    default:
+        echo "Other day";
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <h2>Loops and Arrays</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Loops in PHP</h3>
+                        <pre><code>// For loop
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+
+// While loop
+$i = 0;
+while ($i < 5) {
+    echo $i;
+    $i++;
+}
+
+// Foreach loop
+$colors = ["red", "green", "blue"];
+foreach ($colors as $color) {
+    echo $color;
+}</code></pre>
+                        
+                        <h3>Arrays</h3>
+                        <pre><code>// Indexed array
+$fruits = ["Apple", "Banana", "Orange"];
+
+// Associative array
+$person = [
+    "name" => "John",
+    "age" => 25,
+    "city" => "New York"
+];</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Personal Website. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/nielours" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
